@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>A dream about old Japan</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: rgb(223, 219, 203);
+        }
+
+        span {
+            position: absolute;
+            top: 3vh;
+            left: 50%;
+            font-size: 18px;
+            font-family: arial;
+            padding: 10px 20px;
+            border: 1px solid black;
+            color: white;
+            background-color: royalblue;
+            transform: translateX(-50%);
+            cursor: pointer;
+            transition: .4s;
+        }
+
+        div.picture {
+            position: relative;
+            height: 45vh;
+            width: 80vh;
+            background-color: skyblue;
+            margin: 100px auto;
+            overflow: hidden;
+            border: 1px solid black;
+        }
+
+        img {
+            /* position: absolute; */
+        }
+
+        img:nth-child(1) {
+            position: absolute;
+            top: -100%;
+            left: -100%;
+            z-index: 1;
+            width: 100%;
+            transform: scale(0);
+            transition: .6s;
+            filter: blur(300px);
+        }
+
+        img:nth-child(2) {
+            position: absolute;
+            top: -100%;
+            left: -100%;
+            z-index: 2;
+            transform: scale(0);
+            transition: .6s;
+            filter: blur(300px);
+        }
+
+        img:nth-child(3) {
+            position: absolute;
+            top: -100%;
+            right: -100%;
+            z-index: 3;
+            width: 100%;
+            transform: scale(0);
+            transition: .6s;
+            filter: blur(300px);
+        }
+
+        img:nth-child(4) {
+            position: absolute;
+            top: -100%;
+            right: -100%;
+            z-index: 4;
+            width: 100%;
+            transform: scale(0);
+            transition: .7s;
+            filter: blur(300px);
+        }
+
+        img:nth-child(5) {
+            position: absolute;
+            top: -100%;
+            right: -100%;
+            z-index: 5;
+            width: 100%;
+            transform: scale(0);
+            transition: .8s;
+            filter: blur(300px);
+        }
+
+        img:nth-child(6) {
+            position: absolute;
+            top: -100%;
+            right: -100%;
+            z-index: 6;
+            width: 100%;
+            transform: scale(0);
+            transition: .9s;
+            filter: blur(300px);
+        }
+
+        img:nth-child(7) {
+            position: absolute;
+            top: -100%;
+            left: -100%;
+            z-index: 0;
+            width: 8%;
+            transform: scale(0);
+            transition: 1s;
+            filter: blur(300px);
+        }
+
+        img:nth-child(8) {
+            position: absolute;
+            top: -100%;
+            left: -100%;
+            z-index: 0;
+            width: 30%;
+            transform: scale(0);
+            transition: 1.1s;
+            filter: blur(300px);
+        }
+
+        img:nth-child(9) {
+            position: absolute;
+            top: -100%;
+            right: -100%;
+            z-index: 8;
+            width: 30%;
+            transform: scale(0);
+            transition: 1.2s;
+            filter: blur(300px);
+        }
+
+        img:nth-child(10) {
+            position: absolute;
+            bottom: -100%;
+            right: -100%;
+            z-index: 98;
+            width: 30%;
+            transform: scale(0);
+            transition: 1.3s;
+            filter: blur(300px);
+        }
+
+        img:nth-child(11) {
+            position: absolute;
+            bottom: -100%;
+            left: -100%;
+            z-index: 98;
+            width: 5%;
+            transform: scale(0);
+            transition: 1.4s;
+            filter: blur(300px);
+        }
+
+        span:hover {
+            background-color: brown;
+        }
+
+        span:hover~div.picture img:nth-child(1) {
+            top: 5%;
+            left: 5%;
+            transform: scale(1);
+            filter: blur(0);
+        }
+
+        span:hover~div.picture img:nth-child(2) {
+            top: 25%;
+            left: 0;
+            transform: scale(1);
+            filter: blur(0);
+        }
+
+        span:hover~div.picture img:nth-child(3) {
+            top: 40%;
+            right: 0;
+            transform: scale(1);
+            filter: blur(0);
+        }
+
+        span:hover~div.picture img:nth-child(4) {
+            top: 30%;
+            right: 0;
+            transform: scale(1);
+            filter: blur(0);
+        }
+
+        span:hover~div.picture img:nth-child(5) {
+            top: 44%;
+            right: 0;
+            transform: scale(1);
+            filter: blur(0);
+        }
+
+        span:hover~div.picture img:nth-child(6) {
+            top: 65%;
+            right: 0;
+            transform: scale(1);
+            filter: blur(0);
+        }
+
+        span:hover~div.picture img:nth-child(7) {
+            top: 5%;
+            left: 5%;
+            transform: scale(1);
+            filter: blur(0);
+        }
+
+        span:hover~div.picture img:nth-child(8) {
+            top: 8%;
+            left: -5%;
+            transform: scale(1);
+            filter: blur(0);
+        }
+
+        span:hover~div.picture img:nth-child(9) {
+            top: 5%;
+            right: 5%;
+            transform: scale(1);
+            filter: blur(0);
+        }
+
+        span:hover~div.picture img:nth-child(10) {
+            bottom: 44%;
+            right: 0;
+            transform: scale(1);
+            filter: blur(0);
+        }
+
+        span:hover~div.picture img:nth-child(11) {
+            bottom: 15%;
+            left: 5%;
+            transform: scale(1);
+            filter: blur(0);
+        }
+    </style>
+</head>
+
+<body>
+    <span>Zobacz mnie</span>
+    <div class="picture">
+        <img src="img/japan1.png" alt="">
+        <img src="img/japan2.png" alt="">
+        <img src="img/japan3.png" alt="">
+        <img src="img/japan4.png" alt="">
+        <img src="img/japan5.png" alt="">
+        <img src="img/japan6.png" alt="">
+        <img src="img/japan7.png" alt="">
+        <img src="img/japan8.png" alt="">
+        <img src="img/japan9.png" alt="">
+        <img src="img/japan10.png" alt="">
+        <img src="img/japan11.png" alt="">
+
+    </div>
+</body>
+
+</html>
